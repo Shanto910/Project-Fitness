@@ -170,6 +170,12 @@ header {
 	font-style: italic;
 }
 
+.navbar svg {
+	display: none;
+	width: 24px;
+	height: 24px;
+}
+
 .navbar-list {
 	display: flex;
 	gap: 48px;
@@ -560,6 +566,41 @@ header .btn-full {
 	border-top: 2px solid var(--white-10);
 }
 
+/* ===== REVIEWS RULES ===== */
+
+.section-reviews > h2,
+.section-reviews > p {
+	text-align: center;
+}
+
+.section-reviews > p {
+	margin-top: 14px;
+}
+
+.client img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-bottom: 14px;
+}
+
+.reviews {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 40px;
+	column-gap: 80px;
+	row-gap: 48px;
+
+	font-size: 1.125rem;
+	color: var(--white);
+}
+
+.customer-name {
+	margin-top: 14px;
+	font-size: 0.875rem;
+	color: var(--white-50);
+}
+
 /* ===== RESPONSIVE RULES ===== */
 
 @media screen and (max-width: 1200px) {
@@ -619,6 +660,9 @@ header .btn-full {
 
 	.navbar-list {
 		display: none;
+	}
+	.navbar svg {
+		display: block;
 	}
 
 	.btn-full span {
@@ -760,5 +804,9 @@ header .btn-full {
 	.staff-6,
 	.staff-3 {
 		order: 1;
+	}
+
+	.reviews {
+		grid-template-columns: 1fr;
 	}
 }
