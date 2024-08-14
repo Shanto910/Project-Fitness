@@ -6,7 +6,7 @@
 		<title>FITNESS</title>
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
-	<body class="wrapper">
+	<body>
 		<header class="bg-expansion">
 			<nav class="navbar">
 				<a class="brand-logo" href="/">Fitness</a>
@@ -59,8 +59,8 @@
 				</div>
 			</div>
 		</header>
-		<main>
-			<section class="section-cyh">
+		<main class="wrapper">
+			<section class="section-cyh mt">
 				<h2 class="heading-secondary">Change Your Habits</h2>
 				<p class="heading-description">
 					We believe fitness should be accessible to everyone,
@@ -109,6 +109,161 @@
 					</div>
 				</div>
 			</section>
+			<section class="section-card mt grid">
+				<div class="card-text-box">
+					<h2 class="heading-secondary">Run an Extra Mile Easily</h2>
+					<p class="heading-description">
+						We believe fitness should be accessible to everyone,
+						everywhere, regardless of income or access to a gym.
+						With hundreds of professional workouts.
+					</p>
+					<a class="btn btn-full btn-long" href="#contact"
+						>Join Now</a
+					>
+				</div>
+				<div class="card-img-box">
+					<img src="./images/run.jpg" alt="running" />
+				</div>
+			</section>
+			<div class="container mt">
+				<h2 class="heading-secondary">BMI Calculator</h2>
+				<p class="heading-description">
+					We believe fitness should be accessible to everyone,
+					everywhere, regardless of income or access to a gym.
+				</p>
+			</div>
+			<section class="section-bmi mt bg-expansion">
+				<div class="grid">
+					<div class="bmi-chart">
+						<h3 class="bmi-headline">BMI Calculator Chart</h3>
+						<table class="bmi-table">
+							<tr>
+								<th>BMI</th>
+								<th>Weight Status</th>
+							</tr>
+							<tr>
+								<td>Below 18.5</td>
+								<td>Underweight</td>
+							</tr>
+							<tr>
+								<td>18.5 - 24.9</td>
+								<td>Healthy</td>
+							</tr>
+							<tr>
+								<td>25.0 - 29.9</td>
+								<td>Overweight</td>
+							</tr>
+							<tr>
+								<td>30.0 - and Above</td>
+								<td>Obese</td>
+							</tr>
+						</table>
+					</div>
+					<div class="bmi-calculator">
+						<h3 class="bmi-headline">Calculate your BMI</h3>
+						<p class="heading-description">
+							We believe fitness should be accessible to everyone,
+							everywhere, regardless of income or access to a gym.
+						</p>
+						<div class="calculator grid">
+							<input
+								id="height"
+								type="text"
+								placeholder="Height/cm"
+								name="height"
+								required />
+							<input
+								id="weight"
+								type="text"
+								placeholder="Weight/kg"
+								name="weight"
+								required />
+							<input
+								id="age"
+								type="text"
+								placeholder="Age"
+								name="age"
+								required />
+
+							<select id="gender" name="gender" required>
+								<option value="">Sex</option>
+							</select>
+
+							<select id="factor" name="factor" required>
+								<option value="">
+									Select an activity factor
+								</option>
+							</select>
+						</div>
+						<button class="btn btn-full btn-long">Calculate</button>
+					</div>
+				</div>
+			</section>
+			<footer class="section-footer mt bg-expansion">
+				<div class="grid">
+					<div class="footer-logo">
+						<span class="brand-logo">Fitness</span>
+						<p class="heading-description">
+							We believe fitness should be accessible to everyone,
+							everywhere, regardless of income or access to a gym.
+							With hundreds of professional workouts.
+						</p>
+					</div>
+					<div class="footer-nav">
+						<h3 class="footer-nav-headline">Get Started</h3>
+						<ul class="footer-nav-list">
+							<li>
+								<a class="footer-nav-link" href="#">Service</a>
+							</li>
+							<li>
+								<a class="footer-nav-link" href="#"
+									>Contact Us</a
+								>
+							</li>
+							<li>
+								<a class="footer-nav-link" href="#"
+									>Affiliate Program</a
+								>
+							</li>
+							<li>
+								<a class="footer-nav-link" href="#">About Us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nav mt-32 js-end">
+						<div>
+							<h3 class="footer-nav-headline">Get Started</h3>
+							<ul class="footer-nav-list">
+								<li>
+									<a class="footer-nav-link" href="#"
+										>Fitness</a
+									>
+								</li>
+								<li>
+									<a class="footer-nav-link" href="#"
+										>Platform</a
+									>
+								</li>
+								<li>
+									<a class="footer-nav-link" href="#"
+										>Workout Library</a
+									>
+								</li>
+								<li>
+									<a class="footer-nav-link" href="#"
+										>App Design</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="copyright-info">
+						<p>All right reserved @Fitness 2024</p>
+					</div>
+				</div>
+			</footer>
 		</main>
 	</body>
 </html>
